@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Detroit Taco House illustration</title>
+  <desc id="desc">A simple illustration of tacos with colorful toppings.</desc>
+  <rect width="800" height="500" fill="#f6e7c7"/>
+  <rect x="0" y="340" width="800" height="160" fill="#d7b377"/>
+  <ellipse cx="400" cy="275" rx="220" ry="85" fill="#fffaf0" stroke="#8a5d38" stroke-width="10"/>
+  <path d="M250 260c0-70 60-125 130-125s130 55 130 125" fill="#f2c15b"/>
+  <path d="M360 245c0-58 52-104 112-104s112 46 112 104" fill="#e6b34d"/>
+  <circle cx="300" cy="215" r="16" fill="#d24b3a"/>
+  <circle cx="340" cy="195" r="14" fill="#6f954f"/>
+  <circle cx="410" cy="205" r="14" fill="#d24b3a"/>
+  <circle cx="470" cy="200" r="16" fill="#6f954f"/>
+  <circle cx="520" cy="225" r="14" fill="#d24b3a"/>
+  <circle cx="575" cy="290" r="26" fill="#8ab15e"/>
+  <circle cx="225" cy="300" r="26" fill="#8ab15e"/>
+  <text x="400" y="430" text-anchor="middle" font-family="Georgia, serif" font-size="40" fill="#4f3829">Detroit Taco House</text>
+</svg>

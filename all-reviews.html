@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Reviews | Michigan Bites Review</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="filter.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="brand-block">
+        <p class="eyebrow">Restaurant Review Website</p>
+        <h1>Michigan Bites Review</h1>
+        <p class="intro">
+          Browse every restaurant review in one place and jump into the full write-up.
+        </p>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="all-reviews.html" aria-current="page">All Reviews</a></li>
+          <li><a href="stephs-reviews.html">Steph's Reviews</a></li>
+          <li><a href="brookes-reviews.html">Brooke's Reviews</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="section">
+    <div class="container">
+      <p class="section-label">All Reviews</p>
+      <h2>Every restaurant we’ve reviewed</h2>
+
+      <div class="filter-bar" aria-label="Filter reviews">
+        <label for="cuisine-filter"><strong>Filter by cuisine:</strong></label>
+        <select id="cuisine-filter">
+          <option value="all">All</option>
+          <option value="deli">Deli</option>
+          <option value="cuban">Cuban</option>
+          <option value="american">American</option>
+          <option value="cafe">Cafe</option>
+          <option value="japanese">Japanese</option>
+          <option value="vietnamese">Vietnamese</option>
+        </select>
+
+        <label for="reviewer-filter"><strong>Filter by reviewer:</strong></label>
+        <select id="reviewer-filter">
+          <option value="all">All</option>
+          <option value="steph">Steph</option>
+          <option value="brooke">Brooke</option>
+        </select>
+
+        <button class="button-link" type="button" id="cuisine-filter-button">Filter</button>
+      </div>
+
+      <p class="no-results-message" id="no-results-message" hidden>
+        There aren't any results shown. Please try again.
+      </p>
+
+      <div class="card-grid">
+        <article class="review-card" data-cuisine="deli" data-reviewer="steph">
+          <img src="https://www.zingermansdeli.com/app/uploads/2022/11/Deli_Deli_Front_Spring_16x9_Crop_WEB_2021.jpg" alt="Front exterior of Zingerman's Delicatessen in Ann Arbor.">
+          <div class="card-content">
+            <h3>Zingerman's Delicatessen</h3>
+            <p class="meta">Kerrytown, Ann Arbor</p>
+            <div class="tag-row">
+              <span class="tag">Deli</span>
+              <span class="tag">$$</span>
+            </div>
+            <p class="rating">Steph's rating: 4.3 / 5</p>
+            <p>
+              A well-known Ann Arbor deli famous for large sandwiches, specialty
+              foods, and its longtime local reputation.
+            </p>
+            <a class="text-link" href="zingermans.html">Read full review</a>
+          </div>
+        </article>
+
+        <article class="review-card" data-cuisine="cuban" data-reviewer="steph">
+          <img src="images/frita.jpg" alt="Burger and fries from Frita Batidos in Ann Arbor.">
+          <div class="card-content">
+            <h3>Frita Batidos</h3>
+            <p class="meta">Downtown Ann Arbor</p>
+            <div class="tag-row">
+              <span class="tag">Cuban</span>
+              <span class="tag">$$</span>
+            </div>
+            <p class="rating">Steph's rating: 4.5 / 5</p>
+            <p>
+              A lively Cuban-inspired burger spot known for crispy fries on top of
+              fritas and tropical batidos.
+            </p>
+            <a class="text-link" href="frita-batidos.html">Read full review</a>
+          </div>
+        </article>
+
+        <article class="review-card" data-cuisine="american" data-reviewer="steph">
+          <img src="https://images.squarespace-cdn.com/content/v1/67cf414f31701c1c1927f87d/36ddcbe2-a7ff-451a-a430-a8d5077a0384/_F8A4283.jpg" alt="Sandwiches, salad, and drinks at Sava's in Ann Arbor.">
+          <div class="card-content">
+            <h3>Sava's</h3>
+            <p class="meta">State Street, Ann Arbor</p>
+            <div class="tag-row">
+              <span class="tag">American</span>
+              <span class="tag">$$</span>
+            </div>
+            <p class="rating">Steph's rating: 4.3 / 5</p>
+            <p>
+              A popular State Street restaurant with an inviting dining room and a
+              menu that works for brunch, lunch, or dinner.
+            </p>
+            <a class="text-link" href="savas.html">Read full review</a>
+          </div>
+        </article>
+
+        <article class="review-card" data-cuisine="cafe" data-reviewer="brooke">
+          <img src="images/unitea.jpg" alt="Drink from Unitea Cafe.">
+          <div class="card-content">
+            <h3>Unitea Cafe</h3>
+            <p class="meta">Ann Arbor</p>
+            <div class="tag-row">
+              <span class="tag">Cafe</span>
+              <span class="tag">$</span>
+            </div>
+            <p class="rating">Brooke's rating: 4.4 / 5</p>
+            <p>
+              A casual cafe stop for milk teas, fruit teas, and small snacks when you
+              want something quick and refreshing.
+            </p>
+            <a class="text-link" href="unitea-cafe.html">Read full review</a>
+          </div>
+        </article>
+
+        <article class="review-card" data-cuisine="japanese" data-reviewer="brooke">
+          <img src="images/sadako.jpg" alt="Food from Sadako restaurant.">
+          <div class="card-content">
+            <h3>Sadako</h3>
+            <p class="meta">Ann Arbor</p>
+            <div class="tag-row">
+              <span class="tag">Japanese</span>
+              <span class="tag">$$</span>
+            </div>
+            <p class="rating">Brooke's rating: 4.6 / 5</p>
+            <p>
+              A cozy Japanese restaurant known for sushi, noodle bowls, and a menu
+              that works for both casual lunches and relaxed dinners.
+            </p>
+            <a class="text-link" href="sadako.html">Read full review</a>
+          </div>
+        </article>
+
+        <article class="review-card" data-cuisine="vietnamese" data-reviewer="brooke">
+          <img src="images/saigon.jpg" alt="Food from Saigon Kitchen & Bar.">
+          <div class="card-content">
+            <h3>Saigon Kitchen &amp; Bar</h3>
+            <p class="meta">Ann Arbor</p>
+            <div class="tag-row">
+              <span class="tag">Vietnamese</span>
+              <span class="tag">$$</span>
+            </div>
+            <p class="rating">Brooke's rating: 4.5 / 5</p>
+            <p>
+              A Vietnamese spot for pho, rice plates, and shareable appetizers, with
+              a bar menu that makes it a fun group dinner option.
+            </p>
+            <a class="text-link" href="saigon-kitchen-bar.html">Read full review</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Michigan Bites Review</p>
+      <p>Simple restaurant reviews for students, locals, and visitors in Michigan.</p>
+      <p class="footer-note">Restaurant details, public traveler ratings, and image links were adapted from current public sources.</p>
+    </div>
+  </footer>
+</body>
+</html>
