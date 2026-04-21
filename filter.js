@@ -1,5 +1,3 @@
-// Simple review filters for review listing pages.
-
 const cuisineFilter = document.getElementById("cuisine-filter");
 const reviewerFilter = document.getElementById("reviewer-filter");
 const filterButton = document.getElementById("cuisine-filter-button");
