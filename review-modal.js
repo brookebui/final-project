@@ -71,13 +71,14 @@ const modal = document.createElement("div");
 modal.className = "review-modal-overlay";
 modal.setAttribute("hidden", "");
 modal.innerHTML = `
-  <section class="review-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <section class="review-modal" role="dialog" aria-modal="true" aria-label="Restaurant review">
     <button class="modal-close" type="button" aria-label="Close full review">&times;</button>
     <div id="modal-content"></div>
   </section>
 `;
 document.body.appendChild(modal);
 
+const dialogPanel = modal.querySelector(".review-modal");
 const modalContent = document.getElementById("modal-content");
 const closeButton = modal.querySelector(".modal-close");
 
@@ -93,7 +94,7 @@ function openReviewModal(review) {
     <img class="modal-image" src="${review.image}" alt="${review.alt}">
     <div class="modal-body">
       <p class="section-label">Restaurant Review</p>
-      <h2 id="modal-title">${review.title}</h2>
+      <h2>${review.title}</h2>
       <p class="meta">${review.address}</p>
       <p class="rating">${review.rating}</p>
       <h3>Review</h3>
@@ -113,12 +114,14 @@ function openReviewModal(review) {
     </div>
   `;
 
+  dialogPanel.setAttribute("aria-label", `Full review: ${review.title}`);
   modal.hidden = false;
   document.body.classList.add("modal-open");
   closeButton.focus();
 }
 
 function closeReviewModal() {
+  dialogPanel.setAttribute("aria-label", "Restaurant review");
   modal.hidden = true;
   document.body.classList.remove("modal-open");
 }

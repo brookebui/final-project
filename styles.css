@@ -422,11 +422,6 @@ nav {
   background: #ffffff;
 }
 
-.footer-note {
-  font-size: 0.95rem;
-  color: var(--muted);
-}
-
 @media (max-width: 900px) {
   .hero-grid,
   .card-grid,
